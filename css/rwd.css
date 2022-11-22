@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+@media only screen and (max-width : 768px) {
+
+/*-------------------------------------------------------------------------------------
+スマホ用レイアウト（768px以下スクリーン）
+----------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------
+共通設定(スマホ)
+-----------------------------------------------------*/
+
+/*body全体の初期スタイル調整*/
+body {
+	width: 100%;
+  -webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:100%;
+}
+
+/*--------------------------------------------------
+見出しタグ設定（スマホ）
+-----------------------------------------------------*/
+h2 {
+  margin: 0.5em 0em;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+h3 {
+  margin: 0.5em 0em;
+  padding: 0.3em 0.6em;
+  font-size: 1.6em;
+  font-weight: bold;
+  border-left: 8px solid #105FA3;
+  border-bottom: 1px dotted #105FA3;
+}
+/*--------------------------------------------------
+全体レイアウト／背景設定（スマホ）
+-----------------------------------------------------*/
+/*全体エリア（全体背景を設定するにはここ）*/
+.main {
+  background-color: #f2f2f2;
+	overflow:hidden;
+}
+/*記事(ボディ)エリア*/
+.article {
+  background-color: #fff;
+  border-left: none;
+  border-right: none;
+  font-size: 1.6em; /*=16px*/
+}
+/*記事(ボディ)エリアの行間*/
+.article p {
+  line-height: 1.6;
+}
+/*カラム全体の幅を変更する*/
+.article, .top_image_in {
+  width: 100%;
+  margin: 0 auto; /*真ん中に要素を置きたいときに使う*/
+}
+/*--------------------------------------------------
+上部固定ヘッダー設定
+-----------------------------------------------------*/
+/*上部固定ヘッダー全体*/
+.header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 5000;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  overflow: auto;
+}
+/*ヘッダー内部をカラム幅にする*/
+.header_inr {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/*ヘッダーのロゴ*/
+.header_logo {
+  width: 25%;
+  float: left;
+  margin: 0em;
+}
+/*ヘッダーの問い合わせボタン*/
+.header_mail {
+  width: 30%;
+  float: right;
+  margin: 0.5em 0em 0em;
+}
+/*ヘッダーの電話ボタン*/
+.header_tel {
+  width: 35%;
+  float: right;
+  margin: 0.7em 0.5em 0em;
+}
+
+/*--------------------------------------------------
+ファーストビュー設定
+-----------------------------------------------------*/
+.top_image {
+  background-image: none;
+}
+.top_image_in img {
+  width: 100%;
+}
+/*--------------------------------------------------
+sectionの設定
+-----------------------------------------------------*/
+.seciton_01 {
+  margin: 2em 0;
+  padding: 0 0em;
+}
+
+.section_02 {
+  margin: 2em 0;
+  padding: 1.5em 3em;
+}
+
+
+
+
+/*--------------------------------------------------
+CTAエリア
+-----------------------------------------------------*/
+.area_cta {
+  background-color: #eceeef;
+  padding: 1em 3em;
+}
+.area_cta_inr {
+  background-color: #fff;
+  padding: 1em 2em;
+  overflow: auto;
+}
+/*--------------------------------------------------
+フッター部分
+-----------------------------------------------------*/
+.footer {
+  background-color: #fff;
+  text-align: center;
+  font-size: 1.2em;
+  color: #fff;
+}
+.footer a {
+  color: #fff;
+}
+
+
+
+}
